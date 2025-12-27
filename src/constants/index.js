@@ -77,52 +77,65 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
+    date: "December 03, 2025",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+      "The Rise of Tailwind CSS -Why Developers Are Switching",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    link: "https://medium.com/@nemisruparel07/the-rise-of-tailwind-css-why-developers-are-switching-90ad4a001187",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    date: "December 03, 2025",
+    title: "How to Build a Clean Portfolio as a Computer Engineering Student",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    link: "https://medium.com/@nemisruparel07/how-to-build-a-clean-portfolio-as-a-computer-engineering-student-db91db02bf64",
   },
   {
-    id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
-    image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-  },
+  id: 3,
+  date: "December 03, 2025",
+  title: "Understanding GitHub and How to Use It Effectively",
+  image: "/images/blog3.png",
+  link: "",
+  comingSoon: true,
+}
 ];
 
 const techStack = [
   {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
-  },
-  {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["React.js","HTML"],
   },
   {
     category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Tailwind", "CSS"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["JavaScript"],
+  },
+  {
+    category: "Mobile Development",
+    items: ["React Native", "Android"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "Oracle", "MySQL"],
+  },
+  {
+    category: "Programming Languages",
+    items: ["C", "C++", "Java", "PHP", "Python"],
+  },
+  {
+    category: "Python Libraries",
+    items: ["NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
+  },
+  {
+    category: "Frameworks",
+    items: ["Bootstap", "Angular", "Expo",],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "Kaggle", "Linux"],
   },
 ];
 
@@ -397,7 +410,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-10 left-5",
-      imageUrl: "/images/adrian.jpg",
+      imageUrl: "/images/image.png",
     },
     {
       id: 2,
@@ -406,7 +419,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-28 right-72",
-      imageUrl: "/images/adrian-2.jpg",
+      imageUrl: "/images/image.png",
     },
     {
       id: 3,
@@ -415,7 +428,7 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/image.png",
     },
     {
       id: 4,
@@ -425,11 +438,11 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-60 left-5",
       subtitle: "Meet the Developer Behind the Code",
-      image: "/images/adrian.jpg",
+      image: "/images/gal4.png",
       description: [
-        "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+        "Hey! I'm Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
         "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
+        "I'm big on clean UI, good UX, and writing code that doesn't need a search party to debug.",
         "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
       ],
     },
@@ -467,7 +480,7 @@ const TRASH_LOCATION = {
       name: "trash1.png",
       icon: "/images/image.png",
       kind: "file",
-      fileType: "img",
+      fileType: "img",  
       position: "top-10 left-10",
       imageUrl: "/images/trash-1.png",
     },
@@ -482,6 +495,8 @@ const TRASH_LOCATION = {
     },
   ],
 };
+
+
 
 export const locations = {
   work: WORK_LOCATION,

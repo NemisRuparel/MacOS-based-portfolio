@@ -37,7 +37,7 @@ body {
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+    @apply flex justify-between items-center bg-[#000000a6] backdrop-blur-md p-2 px-5 select-none text-[#F1F1F1] opacity-90;
 
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
@@ -63,7 +63,7 @@ body {
 
 @layer components {
   .icon {
-    @apply p-1 hover:bg-gray-200 rounded hover:cursor-default;
+    @apply p-1 hover:bg-gray-900 rounded hover:cursor-default;
   }
 
   #welcome {
@@ -82,7 +82,7 @@ body {
     @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
 
     .dock-container {
-      @apply bg-white/20 backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
+      @apply bg-[#000000a6] backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
     }
 
     .tooltip {
@@ -90,7 +90,7 @@ body {
     }
 
     .dock-icon {
-      @apply size-14 3xl:size-20 cursor-pointer;
+      @apply size-12 3xl:size-12 cursor-pointer;
 
       img {
         @apply object-cover object-center;
@@ -115,14 +115,14 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-[#36363B] border-b border-gray-700 select-none text-sm text-gray-400;
   }
 
   #safari {
-    @apply w-4xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-4xl absolute top-40 left-2/12 bg-[#1E1E1E] shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     .search {
-      @apply flex items-center gap-3 w-2/3 bg-white border border-gray-300 rounded-lg px-3 py-2;
+      @apply flex items-center gap-3 w-2/3 bg-[#1E1E1E] border border-gray-700 rounded-lg px-3 py-2;
 
       input {
         @apply placeholder:text-gray-400;
@@ -130,7 +130,7 @@ body {
     }
 
     .blog {
-      @apply bg-white p-10 max-w-3xl mx-auto;
+      @apply bg-[#1E1D22] p-10 max-w-3xl mx-auto;
 
       h2 {
         @apply text-xl font-bold text-pink-600 mb-10;
@@ -140,22 +140,22 @@ body {
         @apply grid grid-cols-12 space-x-5;
 
         img {
-          @apply size-full rounded-md object-cover;
+          @apply  object-cover ;
         }
 
         .content {
-          @apply col-span-10 space-y-3;
+          @apply col-span-10 space-y-3 text-white;
 
           p {
-            @apply text-xs text-gray-500;
+            @apply text-xs text-[#aaa];
           }
 
           h3 {
-            @apply font-semibold text-base text-gray-800;
+            @apply font-semibold text-base text-white;
           }
 
           a {
-            @apply text-blue-600 text-xs hover:underline flex items-center gap-3;
+            @apply text-blue-400 text-xs hover:underline flex items-center gap-3;
           }
         }
       }
@@ -163,21 +163,21 @@ body {
   }
 
   #terminal {
-    @apply w-xl absolute top-32 left-1/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply w-2xl absolute top-32 left-1/12 bg-[#1E1E1E] shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden ;
 
     h2 {
-      @apply font-bold text-sm text-center w-full;
+      @apply font-bold text-sm text-center w-full text-[#FAFAFA] mr-20;
     }
 
     .techstack {
-      @apply text-sm font-roboto p-5;
+      @apply text-sm font-roboto p-5 text-white;
 
       .label {
-        @apply flex items-center ms-10 mt-7;
+        @apply flex items-center ms-10 mt-7 gap-20 font-bold text-white;
       }
 
       .content {
-        @apply py-5 my-5 border-y border-dashed space-y-1;
+        @apply py-5 my-5 border-y border-dashed space-y-1 text-white;
 
         li {
           .check {
@@ -185,11 +185,11 @@ body {
           }
 
           h3 {
-            @apply font-semibold text-[#00A154] w-32 ms-5;
+            @apply font-semibold text-[#00A154] w-50 ms-5;
           }
 
           ul {
-            @apply flex items-center gap-3;
+            @apply flex items-center gap-3.5;
           }
         }
       }
@@ -240,7 +240,7 @@ body {
     @apply max-w-3xl absolute top-96 left-1/2 -translate-y-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     .sidebar {
-      @apply w-3/12 flex-none bg-gray-50 border-r border-gray-200 flex flex-col p-5;
+      @apply w-3/12 flex-none bg-['#1E1D22'] border-r border-gray-200 flex flex-col p-5;
 
       h2 {
         @apply text-xs font-medium text-gray-400 mb-1;
@@ -297,11 +297,11 @@ body {
   }
 
   #resume {
-    @apply w-fit h-fit absolute top-16 left-7/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply absolute top-16 left-70 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden border-[#36363B];
 
     #window-header {
       h2 {
-        @apply font-bold text-sm text-center flex-1;
+        @apply font-bold text-sm text-center flex-1 text-white;
       }
     }
   }
@@ -310,31 +310,31 @@ body {
     @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
 
     .sidebar {
-      @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3;
+      @apply w-48 bg-[#1E1D22] border-r border-[#3A3A40] flex flex-col p-5 space-y-3;
 
       h3 {
-        @apply text-xs font-medium text-gray-400 mb-1;
-      }
+        @apply text-xs font-medium text-white mb-1;
+        }
 
       ul {
         @apply space-y-1;
 
         .active {
-          @apply bg-blue-100 text-blue-700;
+          @apply bg-[#34343A] ;
         }
 
         .not-active {
-          @apply text-gray-700 hover:bg-gray-200;
+          @apply text-white hover:bg-[#26262C];
         }
 
         li {
-          @apply flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors;
+          @apply flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors ;
         }
       }
     }
 
     .content {
-      @apply flex-1 p-8 bg-white max-w-2xl relative;
+      @apply flex-1 p-8 bg-[#1E1D22] max-w-2xl relative text-white;
 
       li {
         @apply absolute flex items-center flex-col gap-3;
@@ -393,4 +393,82 @@ body {
       }
     }
   }
+}
+
+#window-controls {
+  @apply flex items-center gap-2 ml-2;
+}
+
+/* Traffic-light buttons */
+#window-controls .close,
+#window-controls .minimize,
+#window-controls .maximize {
+  @apply size-3.5 rounded-full flex items-center justify-center relative cursor-pointer;
+}
+
+/* Colors */
+#window-controls .close {
+  background-color: #ff5f57;
+}
+#window-controls .minimize {
+  background-color: #febc2e;
+}
+#window-controls .maximize {
+  background-color: #28c840;
+}
+
+/* Hidden icons */
+#window-controls svg {
+  @apply absolute w-[7px] h-[7px] opacity-0 transition-opacity duration-150;
+}
+
+/* Hover = show icons (macOS style) */
+#window-controls:hover svg {
+  opacity: 1;
+}
+
+
+.icon-hover {
+  width: 16px;
+  height: 16px;
+  background-color: #f1f1f1;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  transition: background-color 0.2s ease;
+}
+
+.icon-hover-right {
+  width: 16px;
+  height: 16px;
+  
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  transition: background-color 0.2s ease;
+}
+
+.icon-hover:hover {
+  cursor: pointer;
+  background-color: #aaa;
+}
+nav {
+  position: relative;
+  z-index: 10;
+}
+
+nav > div {
+  position: relative;
+  z-index: 20;
+}
+
+nav ul {
+  position: relative;
+  z-index: 30;
 }
