@@ -209,14 +209,14 @@ body {
   }
 
   #contact {
-    @apply max-w-2xl absolute top-60 left-5/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+    @apply max-w-2xl absolute top-60 left-5/12 bg-[#1E1D22] shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     h2 {
-      @apply font-bold text-sm text-center w-full;
+      @apply font-bold text-sm text-center w-full text-white;
     }
 
     h3 {
-      @apply text-xl font-semibold;
+      @apply text-xl font-semibold text-white;
     }
 
     ul {
