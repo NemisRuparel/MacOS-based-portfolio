@@ -40,7 +40,7 @@ const Resume = () => {
         <h2>Resume.pdf</h2>
 
         <a
-  href="Resume.pdf"
+  href="/Resume.pdf"
   download="Nemis_Ruparel_Resume.pdf"
   className="cursor-pointer"
   title="Download Resume"
@@ -64,7 +64,7 @@ const Resume = () => {
           }`}
         >
           <Document
-            file="files/Resume.pdf"
+            file="/Resume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
           >
             {Array.from(new Array(numPages), (el, index) => (
