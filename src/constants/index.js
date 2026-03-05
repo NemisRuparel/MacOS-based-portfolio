@@ -48,12 +48,7 @@ const dockApps = [
     icon: "safari.png",
     canOpen: true,
   },
-  {
-    id: "photos",
-    name: "Gallery", // was "Photos"
-    icon: "photos.png",
-    canOpen: true,
-  },
+ 
   {
     id: "contact",
     name: "Contact", // or "Get in touch"
@@ -66,12 +61,7 @@ const dockApps = [
     icon: "terminal.png",
     canOpen: true,
   },
-  {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
-  },
+  
 ];
 
 const blogPosts = [
@@ -148,13 +138,13 @@ const socials = [
     link: "https://github.com/NemisRuparel",
   },
   {
-    id: 2,
-    text: "Instagram",
-    icon: "/icons/instagram-icon.svg",
-    bg: "#E1306C",
-    link: "https://www.instagram.com/nemis_ruparel._/",
-  },
-  {
+  id: 3,
+  text: "Email",
+  icon: "/icons/email.svg",
+  bg: "#EC493C",
+  link: "mailto:nemisruparel07@gmail.com",
+},
+{
     id: 3,
     text: "Twitter/X",
     icon: "/icons/twitter.svg",
@@ -166,7 +156,7 @@ const socials = [
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#086BCA",
-    link: "https://www.linkedin.com/in/nemis-ruparel ",
+    link: "https://www.linkedin.com/in/nemis-ruparel",
   },
 ];
 
@@ -238,7 +228,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "Campus Placement Prediction ML Model",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -246,52 +236,36 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "Campus Placement Prediction.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
-          ],
+  "The Campus Placement Prediction project is a machine learning model designed to predict whether a student is likely to be placed during campus recruitment.",
+  "It analyzes various academic and educational factors such as grades, specialization, and student background to identify patterns that influence placement outcomes.",
+  "The project involves data preprocessing, exploratory data analysis, and training machine learning models to achieve accurate predictions.",
+  "It demonstrates practical experience in applying machine learning techniques to real-world problems using Python and data science libraries.",
+  "The system helps illustrate how data-driven insights can support better decision-making in educational and recruitment environments."
+],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "GitHub Repository",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://github.com/NemisRuparel/Campus-Placement-Prediction-ML-Model",
           position: "top-10 right-20",
         },
-        {
-          id: 4,
-          name: "nike.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-1.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
-        },
+        
       ],
     },
 
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "Indian Heritage Narrator",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -299,52 +273,35 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "Indian Heritage Narrator.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-          ],
+  "The Indian Heritage Narrator project is designed to present stories and historical insights about India’s rich cultural heritage in an engaging digital format.",
+  "It allows users to explore important monuments, traditions, and historical places while learning about their cultural significance.",
+  "Instead of just displaying information, the platform focuses on delivering heritage content in a storytelling style that makes learning about history more interactive and interesting.",
+  "The project demonstrates how technology can be used to preserve and share cultural knowledge with a wider audience.",
+  "It is built using modern web technologies, showcasing skills in TypeScript and web development while creating an informative and user-friendly experience."
+],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "GitHub Repository",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://github.com/NemisRuparel/Indian-Heritage-Narrator",
           position: "top-20 left-20",
-        },
-        {
-          id: 4,
-          name: "ai-resume-analyzer.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 left-80",
-          imageUrl: "/images/project-2.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 left-5",
-        },
+        },      
       ],
     },
 
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "E-Commerce Website",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -352,44 +309,70 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "e-commerce website.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
-          ],
+  "The Complete E-Commerce Website project is a full-featured online shopping platform designed to simulate a real-world digital store.",
+  "It allows users to browse products, view detailed product pages, and manage items in a shopping cart for a seamless shopping experience.",
+  "The platform focuses on creating a clean interface and smooth navigation so users can easily explore products and make purchase decisions.",
+  "This project demonstrates practical web development skills including front-end design, dynamic product display, and interactive user features.",
+  "It highlights how modern web technologies can be used to build responsive and user-friendly e-commerce platforms."
+],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "GitHub Repository",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://github.com/NemisRuparel/Complete-e-commerce-website",
+          position: "top-10 right-20",
+        },
+      ],
+    },
+    {
+      id: 8,
+      name: "NavIC",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-50 left-70",
+      windowPosition: "top-[33vh] left-7",
+      children: [
+        {
+          id: 1,
+          name: "NavIC.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+  "The NavIC project focuses on understanding and demonstrating India's regional satellite navigation system developed by ISRO.",
+  "NavIC (Navigation with Indian Constellation) is designed to provide accurate positioning and timing services across India and nearby regions.",
+  "This project explores how satellite navigation systems work and highlights the technology behind India's indigenous alternative to global systems like GPS.",
+  "It showcases concepts related to satellite communication, positioning systems, and real-world applications such as navigation, vehicle tracking, and disaster management.",
+  "The project reflects an interest in space technology and demonstrates how modern navigation systems support critical infrastructure and everyday digital services."
+],
+        },
+        {
+          id: 2,
+          name: "GitHub Repository",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://github.com/NemisRuparel/Complete-e-commerce-website",
           position: "top-10 right-20",
         },
         {
-          id: 4,
-          name: "food-delivery-app.png",
-          icon: "/images/image.png",
+          id: 3,
+          name: "Chck Live",
+          icon: "/images/safari.png",
           kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
+          fileType: "url",
+          href: "https://navic.vercel.app/",
+          position: "top-50 right-40",
         },
       ],
     },
@@ -412,24 +395,7 @@ const ABOUT_LOCATION = {
       position: "top-10 left-5",
       imageUrl: "/images/image.png",
     },
-    {
-      id: 2,
-      name: "casual-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-28 right-72",
-      imageUrl: "/images/image.png",
-    },
-    {
-      id: 3,
-      name: "conference-me.png",
-      icon: "/images/image.png",
-      kind: "file",
-      fileType: "img",
-      position: "top-52 left-80",
-      imageUrl: "/images/image.png",
-    },
+  
     {
       id: 4,
       name: "about-me.txt",
@@ -437,28 +403,31 @@ const ABOUT_LOCATION = {
       kind: "file",
       fileType: "txt",
       position: "top-60 left-5",
-      subtitle: "Meet the Developer Behind the Code",
-      image: "/images/gal4.png",
-      description: [
-        "Hey! I'm Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-        "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-        "I'm big on clean UI, good UX, and writing code that doesn't need a search party to debug.",
-        "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
-      ],
+      subtitle: "A Dedicated Learner Building a Future in Technology 🎯",
+      image: "/images/gal4.jpg",
+description: [
+  "My name is Nemis, and I am currently pursuing Computer Engineering. I have a strong interest in technology and enjoy learning how computers, software, and digital systems work. Exploring technical concepts and understanding their real-world applications always excites me. 💻",
+
+  "I continuously try to improve my knowledge by studying regularly and practicing different types of problems. Solving MCQs and analyzing concepts deeply helps me strengthen my understanding and prepares me to handle challenging technical questions. 📚",
+
+  "Along with technical subjects, I am also working on improving my communication and English skills so that I can express my ideas more clearly and confidently. I believe discipline, consistency, and curiosity are essential for growth. 🎯",
+
+  "My goal is to build strong technical expertise in computer engineering and contribute meaningfully to the world of technology. With dedication, continuous learning, and the right mindset, I aim to create a successful future in the tech industry. 🚀"
+],
     },
   ],
 };
 
 const RESUME_LOCATION = {
   id: 3,
-  type: "resume",
+  type: "My Resume",
   name: "Resume",
   icon: "/icons/file.svg",
   kind: "folder",
   children: [
     {
       id: 1,
-      name: "Resume.pdf",
+      name: "My Resume.pdf",
       icon: "/images/pdf.png",
       kind: "file",
       fileType: "pdf",
@@ -477,21 +446,30 @@ const TRASH_LOCATION = {
   children: [
     {
       id: 1,
-      name: "trash1.png",
-      icon: "/images/image.png",
+      name: "Error.png",
+      icon: "/images/Error.png",
       kind: "file",
       fileType: "img",  
       position: "top-10 left-10",
-      imageUrl: "/images/trash-1.png",
+      imageUrl: "/images/Error.png",
     },
     {
       id: 2,
-      name: "trash2.png",
-      icon: "/images/image.png",
+      name: "Coffee.png",
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0s2ObVImUToY337-gdPG2egyFbnKFZa4XtQ&s",
       kind: "file",
       fileType: "img",
       position: "top-40 left-80",
-      imageUrl: "/images/trash-2.png",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0s2ObVImUToY337-gdPG2egyFbnKFZa4XtQ&s",
+    },
+    {
+      id: 3,
+      name: "Screenshot_20304.png",
+      icon: "images/Screenshot_20304.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-50 left-10",
+      imageUrl: "images/Screenshot_20304.png",
     },
   ],
 };

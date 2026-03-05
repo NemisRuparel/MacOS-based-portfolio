@@ -22,6 +22,7 @@ rounded-xl text-white font-medium">
   Looking to build something meaningful together? I'm just one message away..!
 </p>
 
+
     
     <ul>
         {socials.map(({id, bg, link, icon, text})=>

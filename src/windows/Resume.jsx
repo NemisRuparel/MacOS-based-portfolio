@@ -15,14 +15,20 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const Resume = () => {
   const [loaded, setLoaded] = useState(false);
+  const [numPages, setNumPages] = useState(null);
 
-  // ✅ HOOK USED INSIDE COMPONENT (CORRECT)
   const { windows } = useWindowStore();
   const isMaximized = windows.resume?.isMaximized;
 
+  const onDocumentLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+    setLoaded(true);
+  };
+
   return (
-    <>
-      {/* ✅ HEADER WITH DYNAMIC BORDER */}
+    <div className="flex flex-col h-full">
+
+      {/* HEADER */}
       <div
         id="window-header"
         className={`
@@ -34,17 +40,18 @@ const Resume = () => {
         <h2>Resume.pdf</h2>
 
         <a
-          href="files/resume.pdf"
-          download
-          className="cursor-pointer"
-          title="Download Resume"
-        >
-          <Download className="icon" />
-        </a>
+  href="/files/Resume.pdf"
+  download="Nemis_Ruparel_Resume.pdf"
+  className="cursor-pointer"
+  title="Download Resume"
+>
+  <Download className="icon" />
+</a>
       </div>
 
-      {/* ✅ PDF CONTAINER */}
-      <div className="relative w-full h-full bg-[#1E1E1E] overflow-hidden flex justify-center">
+      {/* SCROLLABLE PDF AREA */}
+      <div className="resume-scroll relative flex-1 bg-[#1E1E1E] overflow-y-auto flex justify-center">
+
         {!loaded && (
           <div className="absolute inset-0 flex items-center justify-center text-sm text-zinc-500">
             Loading PDF…
@@ -57,19 +64,24 @@ const Resume = () => {
           }`}
         >
           <Document
-            file="files/resume.pdf"
-            onLoadSuccess={() => setLoaded(true)}
+            file="files/Resume.pdf"
+            onLoadSuccess={onDocumentLoadSuccess}
           >
-            <Page
-              pageNumber={1}
-              renderTextLayer
-              renderAnnotationLayer
-              width={800}
-            />
+            {Array.from(new Array(numPages), (el, index) => (
+              <div key={index} className="mb-6 flex justify-center">
+                <Page
+                  pageNumber={index + 1}
+                  width={800}
+                  renderTextLayer
+                  renderAnnotationLayer
+                />
+              </div>
+            ))}
           </Document>
         </div>
+
       </div>
-    </>
+    </div>
   );
 };
 

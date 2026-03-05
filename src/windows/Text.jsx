@@ -25,7 +25,7 @@ const Text = () => {
         <h2 className="truncate">{data.name}</h2>
       </div>
 
-      <div className="p-6 bg-white h-full overflow-auto">
+      <div className="p-6 bg-[#1e1d22] h-full overflow-auto ">
         { (data.image || data.imageUrl) && (
           <div className="mb-4">
             <img
@@ -37,11 +37,11 @@ const Text = () => {
         ) }
 
         { data.subtitle && (
-          <p className="text-sm text-zinc-500 mb-4">{data.subtitle}</p>
+          <p className="text-sm text-gray-400 font-bold mb-4">{data.subtitle}</p>
         ) }
 
         { Array.isArray(data.description) && (
-          <div className="space-y-3 text-sm text-zinc-800">
+          <div className="space-y-3 text-sm text-white">
             {data.description.map((para, idx) => (
               <p key={idx}>{para}</p>
             ))}
